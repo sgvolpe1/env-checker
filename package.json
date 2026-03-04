@@ -1,7 +1,7 @@
 {
   "name": "env-checker",
   "version": "1.0.0",
-  "description": "Chequea diferencias entre .env, .env.example, .env.production",
+  "description": "Checks differences between .env, .env.example, .env.production",
   "main": "dist/index.js",
   "bin": {
     "env-checker": "dist/cli.js"
@@ -14,8 +14,12 @@
     "prepublishOnly": "npm run build"
   },
   "keywords": ["env", "environment", "variables", "checker", "validation"],
-  "author": "",
+  "author": "sgvolpe1",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sgvolpe1/env-checker"
+  },
   "devDependencies": {
     "@types/node": "^20.10.0",
     "typescript": "^5.3.0"
