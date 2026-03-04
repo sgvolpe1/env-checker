@@ -1,0 +1,23 @@
+{
+  "name": "env-checker",
+  "version": "1.0.0",
+  "description": "Chequea diferencias entre .env, .env.example, .env.production",
+  "main": "dist/index.js",
+  "bin": {
+    "env-checker": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "check": "node dist/cli.js",
+    "dev": "ts-node src/cli.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["env", "environment", "variables", "checker", "validation"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  }
+}
